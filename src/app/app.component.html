@@ -1,13 +1,19 @@
-<!--Division for GeeksForGeeks heading-->
+<!--Division for  heading-->
 <div class="container-fluid">
-	<div class="row bg-info justify-content-center
-			align-items-center" style="height:80px">
-		<div class="col-3"></div>
-		<div class="col-6 text-light h2">
-			To-do-List
-		</div>
-	</div>
-
+		<nav class="navbar navbar-expand-lg navbar-light  bg-info">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">TO do list</a>
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" routerLink="/home" routerLinkActive="active">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" routerLink="/contactus" routerLinkActive="active">Contact</a>
+					</li>
+				</ul>
+			</div>
+		  </nav>
+		  <router-outlet></router-outlet>
 	<!--Division for taking input from user -->
 	<div class="row mt-1" style="height:80px;">
 		<div class="col-3 d-none col-md-3 d-md-block"></div>

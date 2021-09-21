@@ -18,10 +18,8 @@ public newTask:any;
     //   this.allItems.push(value);
     // }
   addToList() {
-      if (this.newTask == '') {
-      }
-      else {
-          this.allItems.push(this.newTask);
+      if (this.newTask !=='') {
+        this.allItems.push(this.newTask);
           this.newTask = '';
       }
       console.log(this.allItems)
